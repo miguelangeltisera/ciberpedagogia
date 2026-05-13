@@ -104,12 +104,19 @@ export default function App() {
           <h2 className="text-3xl font-bold mb-10 text-center text-blue-900">El Método TISERA en Acción</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {portfolioLinks.map((link, i) => (
-              <a key={i} href={link.url} target="_blank" rel="noopener noreferrer" className="bg-white p-6 rounded-xl border border-blue-200 shadow hover:border-red-400 hover:shadow-lg transition text-center flex flex-col justify-between">
+              <motion.a 
+                key={i} 
+                href={link.url} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                whileHover={{ y: -8, scale: 1.03 }}
+                className="bg-white p-6 rounded-xl border border-blue-200 shadow-md hover:border-red-400 hover:shadow-xl transition-colors text-center flex flex-col justify-between"
+              >
                 <div className="mb-4">
                   <MonitorPlay className="w-10 h-10 mx-auto text-yellow-500" />
                 </div>
                 <h3 className="font-bold text-blue-900">{link.title}</h3>
-              </a>
+              </motion.a>
             ))}
           </div>
         </section>
