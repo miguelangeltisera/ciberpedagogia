@@ -3,26 +3,26 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Brain, Globe, MessageSquare, MonitorPlay } from 'lucide-react';
+import { Brain, Globe, MessageSquare, MonitorPlay, Video, Code, FileText, Layout, Layers, Film, Smartphone, Cpu, Eye } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export default function App() {
   const portfolioLinks = [
-    { title: "Ejemplo 1", url: "https://rzebqv211t.space.minimax.io/" },
-    { title: "Ejemplo 2", url: "https://codepen.io/Miguelangel-Tisera-the-flexboxer/full/VYvJwpp" },
-    { title: "Ejemplo 3", url: "https://uj7qh2py44.space.minimax.io/" },
-    { title: "Ejemplo 4", url: "https://codepen.io/Miguelangel-Tisera-the-flexboxer/full/raxpNyE" },
-    { title: "Ejemplo 5", url: "https://examenpersonajesrealizacionaudiovisul.netlify.app/" },
-    { title: "Ejemplo 6", url: "https://codepen.io/Miguelangel-Tisera-the-flexboxer/full/PwZPKMj" },
-    { title: "Ejemplo 7", url: "https://codepen.io/Miguelangel-Tisera-the-flexboxer/full/Qwyjzvv" },
-    { title: "Ejemplo 8", url: "https://codepen.io/Miguelangel-Tisera-the-flexboxer/full/NPxGarz" },
+    { title: "Ejemplo 1", url: "https://rzebqv211t.space.minimax.io/", icon: Video },
+    { title: "Ejemplo 2", url: "https://codepen.io/Miguelangel-Tisera-the-flexboxer/full/VYvJwpp", icon: Code },
+    { title: "Ejemplo 3", url: "https://uj7qh2py44.space.minimax.io/", icon: Smartphone },
+    { title: "Ejemplo 4", url: "https://codepen.io/Miguelangel-Tisera-the-flexboxer/full/raxpNyE", icon: Layout },
+    { title: "Ejemplo 5", url: "https://examenpersonajesrealizacionaudiovisul.netlify.app/", icon: FileText },
+    { title: "Ejemplo 6", url: "https://codepen.io/Miguelangel-Tisera-the-flexboxer/full/PwZPKMj", icon: Layers },
+    { title: "Ejemplo 7", url: "https://codepen.io/Miguelangel-Tisera-the-flexboxer/full/Qwyjzvv", icon: Film },
+    { title: "Ejemplo 8", url: "https://codepen.io/Miguelangel-Tisera-the-flexboxer/full/NPxGarz", icon: Cpu },
   ];
 
   return (
     <div className="min-h-screen bg-blue-50 text-blue-950 font-sans">
       <header className="sticky top-0 z-50 bg-blue-900 text-white border-b-4 border-yellow-400">
         <nav className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
-          <h1 className="text-2xl font-bold tracking-tight">Método TISERA</h1>
+          <h1 className="text-2xl font-bold tracking-tight">Metodología Tisera</h1>
           <div className="text-sm font-medium text-blue-200 flex flex-col md:flex-row gap-4 items-center">
             <span>Profesor Miguelangel TISERA</span>
             <a href="mailto:miguelangeltisera@gmail.com" className="underline">miguelangeltisera@gmail.com</a>
@@ -39,9 +39,46 @@ export default function App() {
           <p className="text-xl text-blue-800 mb-10 max-w-2xl mx-auto">
             La convergencia de la Realización Audiovisual, la Cibernética y la Pedagogía para una enseñanza innovadora.
           </p>
-          <a href="#portfolio" className="inline-block bg-red-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-red-700 shadow-lg transition-transform hover:scale-105">
-            Explorar el Método TISERA
+          <a href="#vision" className="inline-block bg-red-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-red-700 shadow-lg transition-transform hover:scale-105">
+            Explorar la Metodología
           </a>
+        </section>
+
+        <section id="vision" className="mb-20 bg-white p-10 rounded-3xl shadow-xl border-t-8 border-yellow-400">
+          <div className="flex items-center gap-4 mb-8">
+            <Eye className="w-12 h-12 text-blue-900" />
+            <h2 className="text-4xl font-extrabold text-blue-900">Nuestra Visión</h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="space-y-6">
+              <p className="text-xl font-semibold text-red-600 leading-tight">
+                "Esta es una versión ultra sintetizada del concepto, diseñada específicamente para ser integrada en la web mencionada, seguida de una evaluación estratégica para mejorar el sitio."
+              </p>
+              <h3 className="text-2xl font-bold text-blue-900">Ciberpedagogía Audiovisual: Innovación en la Enseñanza</h3>
+              <p className="text-blue-800 leading-relaxed">
+                La Ciberpedagogía Audiovisual transforma la educación mediante la unión de tres ejes:
+              </p>
+            </div>
+            <div className="space-y-6 bg-blue-50 p-8 rounded-2xl border-l-4 border-red-600">
+              <ul className="space-y-4">
+                <li>
+                  <strong className="text-blue-900">Narrativa Audiovisual:</strong>
+                  <p className="text-blue-800">Contenidos inmersivos de alta calidad que capturan la atención.</p>
+                </li>
+                <li>
+                  <strong className="text-blue-900">Sistemas Cibernéticos:</strong>
+                  <p className="text-blue-800">Herramientas y algoritmos que ofrecen retroalimentación constante y personalizada.</p>
+                </li>
+                <li>
+                  <strong className="text-blue-900">Metodología Activa:</strong>
+                  <p className="text-blue-800">Un enfoque donde el estudiante aprende haciendo, ya sea mediante simulaciones virtuales o creación colaborativa.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="mt-10 p-6 bg-yellow-50 rounded-xl text-blue-900 italic text-center font-medium">
+            "Este modelo permite pasar de la visualización pasiva a un ecosistema de aprendizaje adaptativo, donde los materiales didácticos responden y evolucionan según las necesidades de cada alumno."
+          </div>
         </section>
 
         <section id="about" className="mb-20">
@@ -101,7 +138,7 @@ export default function App() {
         </section>
 
         <section id="portfolio" className="mb-20">
-          <h2 className="text-3xl font-bold mb-10 text-center text-blue-900">El Método TISERA en Acción</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center text-blue-900">La Metodología en Acción</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {portfolioLinks.map((link, i) => (
               <motion.a 
@@ -109,13 +146,14 @@ export default function App() {
                 href={link.url} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                whileHover={{ y: -8, scale: 1.03 }}
-                className="bg-white p-6 rounded-xl border border-blue-200 shadow-md hover:border-red-400 hover:shadow-xl transition-colors text-center flex flex-col justify-between"
+                whileHover={{ y: -8, scale: 1.05 }}
+                className="bg-white p-8 rounded-2xl border border-blue-100 shadow-lg hover:border-red-500 hover:shadow-2xl transition-all text-center flex flex-col items-center justify-center gap-4 group"
               >
-                <div className="mb-4">
-                  <MonitorPlay className="w-10 h-10 mx-auto text-yellow-500" />
+                <div className="p-4 bg-blue-50 rounded-full group-hover:bg-yellow-100 transition-colors">
+                  <link.icon className="w-10 h-10 text-blue-900 group-hover:text-red-600 transition-colors" />
                 </div>
-                <h3 className="font-bold text-blue-900">{link.title}</h3>
+                <h3 className="font-extrabold text-blue-900 text-lg">{link.title}</h3>
+                <span className="text-xs font-bold text-red-600 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">Ver Proyecto</span>
               </motion.a>
             ))}
           </div>
