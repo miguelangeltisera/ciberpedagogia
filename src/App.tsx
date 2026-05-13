@@ -51,15 +51,12 @@ export default function App() {
           </div>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
-              <p className="text-xl font-semibold text-red-600 leading-tight">
-                "Esta es una versión ultra sintetizada del concepto, diseñada específicamente para ser integrada en la web mencionada, seguida de una evaluación estratégica para mejorar el sitio."
-              </p>
-              <h3 className="text-2xl font-bold text-blue-900">Ciberpedagogía Audiovisual: Innovación en la Enseñanza</h3>
-              <p className="text-blue-800 leading-relaxed">
+              <h3 className="text-3xl font-extrabold text-blue-900 leading-tight">Ciberpedagogía Audiovisual: Innovación en la Enseñanza</h3>
+              <p className="text-xl text-blue-800 leading-relaxed font-medium">
                 La Ciberpedagogía Audiovisual transforma la educación mediante la unión de tres ejes:
               </p>
             </div>
-            <div className="space-y-6 bg-blue-50 p-8 rounded-2xl border-l-4 border-red-600">
+            <div className="space-y-6 bg-blue-50 p-8 rounded-2xl border-l-4 border-red-600 shadow-inner">
               <ul className="space-y-4">
                 <li>
                   <strong className="text-blue-900">Narrativa Audiovisual:</strong>
